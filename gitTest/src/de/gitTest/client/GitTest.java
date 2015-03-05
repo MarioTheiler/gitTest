@@ -24,7 +24,7 @@ import com.google.gwt.user.client.ui.VerticalPanel;
 public class GitTest implements EntryPoint {
  
 	/**
-	 * TEST
+	 * TEST für test-Branch in master-Branch
 	 */
 	private static String SERVER_ERROR = "An error occurred while "
 			+ "attempting to contact the server. Please check your network "
