@@ -22,14 +22,15 @@ import com.google.gwt.user.client.ui.VerticalPanel;
  * Entry point classes define <code>onModuleLoad()</code>.
  */
 public class GitTest implements EntryPoint {
-
+ 
+	/**
+	 * TEST
+	 */
 	private static String SERVER_ERROR = "An error occurred while "
 			+ "attempting to contact the server. Please check your network "
 			+ "connection and try again.";
 
-	/**
-	 * Create a remote service proxy to talk to the server-side Greeting service.
-	 */
+ 
 	private final GreetingServiceAsync greetingService = GWT
 			.create(GreetingService.class);
 
@@ -41,12 +42,8 @@ public class GitTest implements EntryPoint {
 		final TextBox nameField = new TextBox();
 		nameField.setText("GWT User");
 		final Label errorLabel = new Label();
-		
-		final String b = "update";
-
-		// We can add style names to widgets
-		sendButton.addStyleName("sendButton");
-
+ 
+	 
 		// Add the nameField and sendButton to the RootPanel
 		// Use RootPanel.get() to get the entire body element
 		RootPanel.get("nameFieldContainer").add(nameField);
@@ -127,7 +124,6 @@ public class GitTest implements EntryPoint {
 										.setText("Remote Procedure Call - Failure");
 								serverResponseLabel
 										.addStyleName("serverResponseLabelError");
-								serverResponseLabel.setHTML(SERVER_ERROR);
 								dialogBox.center();
 								closeButton.setFocus(true);
 							}
