@@ -114,7 +114,7 @@ public class GitTest implements EntryPoint {
 					errorLabel.setText("Please enter at least four characters");
 					return;
 				}
-
+//zzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
 				// Then, we send the input to the server.
 				sendButton.setEnabled(false);
 				textToServerLabel.setText(textToServer);
